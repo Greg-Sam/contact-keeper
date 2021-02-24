@@ -48,7 +48,7 @@ export default (state, action) => {
         ...state,
         filtered: null
       }
-      defalut:
+    default:
       return state
   }
 }
