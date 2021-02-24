@@ -6,10 +6,10 @@ import About from './components/pages/About'
 import Register from './components/auth/Register'
 import Login from './components/auth/Login'
 import Alerts from './components/layout/Alerts'
-import './App.css';
 import ContactState from './context/contact/ContactState'
 import AuthState from './context/auth/AuthState'
 import AlertState from './context/alert/AlertState'
+import './App.css';
 
 const App = () => {
   return (
@@ -20,6 +20,7 @@ const App = () => {
             <Fragment>
               <Navbar />
               <div className="container">
+                <Alerts />
                 <Switch>
                   <Route exact path='/' component={Home} />
                   <Route exact path='/about' component={About} />
